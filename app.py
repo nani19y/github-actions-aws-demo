@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello from GitHub Actions + AWS EC2!"
-
+   # return "Hello from GitHub Actions + AWS EC2!"
+    return "Version 2 deployed automatically!"
 
 @app.route("/health")
 def health():
