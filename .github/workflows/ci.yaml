@@ -49,9 +49,9 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd /opt/github-actions-demo
+            cd /opt/github-actions-demo/github-actions-aws-demo
             git pull origin main
-            source venv/bin/activate
+            source ../venv/bin/activate
             pip install -r requirements.txt
             sudo systemctl restart github-actions-demo
             sleep 3
