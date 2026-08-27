@@ -6,7 +6,7 @@ def test_home():
     response = client.get("/")
    # assert response.status_code == 500
     assert response.status_code == 200
-    assert response.data == b"Hello from GitHub Actions + AWS EC2!"
+    assert response.data == b"Version 2 deployed automatically!"
 
 
 def test_health():
